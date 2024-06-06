@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Quiz Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="start_btn"><button id="startQuiz">START QUIZ</button></div>
+    <div class="info_box">
+      <div class="info_title"><span>Rules & Regulations</span></div>
+      <div class="info_list">
+        <div class="info">
+          1. You will get <span>15 seconds</span> for every question.
+        </div>
+        <div class="info">2. Once you start quiz you cannot go back.</div>
+        <div class="info">
+          3. You cannot choose more than one option at a time.
+        </div>
+        <div class="info">4. You will get 1 point for each correct answer.</div>
+        <div class="info">5. Green Text indicates a correct answer.</div>
+        <div class="info">6. Blue text indicates a wrong answer.</div>
+        <div class="info">7. Enjoy the quiz & Good Luck.</div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+    <div class="quiz_box">
+      <header>
+        <div class="title">Interview Quiz Application</div>
+        <div class="timer">
+          <div class="time_text">Time left:</div>
+          <div class="timer_sec">15</div>
+        </div>
+      </header>
+      <section>
+        <div class="que_text" id="questionText"></div>
+        <div class="option_list" id="optionList"></div>
+      </section>
+      <footer>
+        <div class="total_que">
+          <span
+            ><p id="currentQuestion">1</p>
+            of
+            <p id="totalQuestions">20</p>
+            Questions</span
+          >
+        </div>
+        <button class="next_btn" id="nextButton">NEXT</button>
+      </footer>
+    </div>
+    <div class="result_box">
+      <div class="icon"><i class="fas fa-crown"></i></div>
+      <div class="complete_text">You have completed the quiz!</div>
+      <div class="score_text">
+        <span
+          >You scored
+          <p id="score">1</p>
+          /
+          <p id="totalScore">20</p></span
+        >
+      </div>
+      <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
